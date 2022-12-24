@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  php-apache:
+    image: php8.1-apache-mailhog
+    build: ./.docker
+    ports:
+      - 80:80
+    volumes:
+      - ./www:/var/www/html
+      - ${PWD}/.docker/php/php.ini:/usr/local/etc/php/php.ini
+
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - 1025:1025
+      - 8025:8025
