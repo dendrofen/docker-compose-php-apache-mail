@@ -17,7 +17,7 @@ Docker Compose project to deploy development environment for PHP. Configured to 
 ### 1. Clone repository
 
 ```bash
-git clone https://github.com/inplayo-com/docker-compose-lamp-wordpress.git
+git clone https://github.com/dendrofen/docker-compose-php-apache-mail
 ```
 
 ### 2. Docker compose
