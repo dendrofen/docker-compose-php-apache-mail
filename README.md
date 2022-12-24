@@ -53,6 +53,6 @@ Changes per this directory would be synced with docker container as normally cal
 
 ### PHP settings
 
-**.docker/php/php.ini** file includes settings for php
+**.docker/php.ini** file includes settings for php
 
 ❗️ **Note:** Reload the container to see changes if modified
