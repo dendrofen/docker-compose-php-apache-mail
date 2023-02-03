@@ -3,3 +3,6 @@
 .AppleDouble
 .LSOverride
 Thumbs.db
+
+# composer
+vendor
