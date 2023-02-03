@@ -28,6 +28,12 @@ Run docker compose in cloned project folder
 docker-compose up -d
 ```
 
+❗️ **Note:** Default docker compose is for Apple Silicon chips, form AMD use following:
+```bash
+docker-compose -f docker-compose.amd.yml up -d
+```
+
+
 ### 3. Start your changes
 
 Once docker-compose run completed, you are free to make changes under www folder.
@@ -46,6 +52,14 @@ Once docker-compose run completed, you are free to make changes under www folder
 ### Project Structure
 
 Folder www contains files using on server, this should be considered as root server directory. All changes should be made under this directory.
+
+### Composer
+
+Project contains composer preinstalled with psr-4 autoload. Composer will build modules every docker container start, or you can do manage it manually using container console.
+
+### Mailer demo
+
+Project contains mailer demo fibric class, in **www/src/Mailer.php**. Mailer functional using [PHPMailer](https://github.com/PHPMailer/PHPMailer). Every index page reload there is new demo email send, code in **www/src/Home.php**.
 
 ### Persisted www
 
